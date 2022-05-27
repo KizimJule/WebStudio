@@ -1,0 +1,26 @@
+.clients {
+  @extend %padding-section;
+}
+.clients__list {
+  @extend %flex;
+  justify-content: center;
+}
+.clients__links {
+  @extend %flex;
+  justify-content: center;
+  @include border($icon-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  fill: $icon-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    @include border($accent-color);
+    fill: $accent-color;
+  }
+}
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
