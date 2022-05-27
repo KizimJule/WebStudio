@@ -1,16 +1,24 @@
 .clients {
-  @extend %padding-section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients__list {
   @extend %flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 .clients__links {
   @extend %flex;
   justify-content: center;
   @include border($icon-color);
   border-radius: 4px;
-  width: 170px;
+  // width: 170px;
   height: 92px;
   fill: $icon-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -21,6 +29,7 @@
     fill: $accent-color;
   }
 }
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__item {
+  width: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
 }
