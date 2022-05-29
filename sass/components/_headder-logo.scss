@@ -2,6 +2,7 @@
 //   @extend %flex;
 // }
 .headder {
+  position: relative;
   border-bottom: 1px solid $border-hedder-color;
 }
 
@@ -39,12 +40,6 @@
   }
 }
 
-.site-nav {
-  display: none;
-}
-.contact {
-  display: none;
-}
 .nav {
   display: flex;
   align-items: center;
