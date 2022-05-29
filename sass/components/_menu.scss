@@ -133,10 +133,10 @@
   display: flex;
   margin-top: 64px;
 }
-//   @media (min-width: 768px) {
-//     display: none;
-//   }
-// }
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
 .menu-mobil__link {
   color: $accent-color;
   text-decoration: none;
