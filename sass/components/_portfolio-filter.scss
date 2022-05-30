@@ -1,6 +1,10 @@
 .portfolio-nav {
-  padding-top: 60px;
+  padding: 60px 0;
   padding-bottom: 60px;
+
+  @media (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .filter__list {
   display: flex;
@@ -13,6 +17,7 @@
     justify-content: center;
   }
 }
+
 .filter__button {
   border: none;
   border-radius: 4px;
