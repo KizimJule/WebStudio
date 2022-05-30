@@ -14,9 +14,9 @@ ul {
   background-color: $primary-white-color;
   color: $primary-text-color;
 
-  // &.modal-open {
-  //   overflow: hidden;
-  // }
+  &.modal .is-open {
+    overflow: hidden;
+  }
 }
 
 ul {

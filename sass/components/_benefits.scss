@@ -7,13 +7,32 @@
     padding-bottom: 94px;
   }
 }
+.feature-list {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.feature-list__item {
+  @media (min-width: 768px) {
+    flex-basis: calc((100% - 120px) / 4);
+    margin: 15px;
+  }
+}
 .feature-list__content {
   @extend %flex;
   justify-content: center;
   background-color: $background-second-color;
-  // width: 270px;
   height: 120px;
   margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    width: 354px;
+  }
+  @media (min-width: 1200px) {
+    width: 279px;
+  }
 }
 
 .feature-list__title {

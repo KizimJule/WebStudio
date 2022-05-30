@@ -4,9 +4,14 @@
 }
 .filter__list {
   display: flex;
-  flex-wrap: wrap;
-  // justify-content: center;
-  margin-bottom: -15px;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: -15px;
+  }
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .filter__button {
   border: none;
@@ -33,8 +38,16 @@
 }
 .filter__item {
   margin-right: 8px;
-  margin-bottom: 15px;
-  &:nth-child(n + 4) {
-    margin-bottom: 0px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+    &:nth-child(n + 4) {
+      margin-bottom: 0px;
+    }
+  }
+  @media (min-width: 768px) {
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 }

@@ -4,6 +4,17 @@
   text-align: center;
   background-color: $background-hero-footer;
 }
+.footer-thumb {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.footer__address {
+  @media (min-width: 768px) {
+    margin-right: 165px;
+  }
+}
 .footer__logo {
   display: block;
   padding: 0;
@@ -89,6 +100,9 @@
   &:hover,
   &:focus {
     @include border($accent-color);
+  }
+  @media (min-width: 768px) {
+    width: 450px;
   }
 }
 .footer-form__button {
