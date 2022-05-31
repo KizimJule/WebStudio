@@ -18,7 +18,7 @@
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     flex-basis: calc((100% - 6 * 15px) / 3);
   }
 }
@@ -30,6 +30,12 @@
   &:hover,
   &:focus {
     box-shadow: $portfolio-box-shadow;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 }
 .project__img {
@@ -55,7 +61,12 @@
   border-left: 1px solid $border-cards-portfolio;
   border-right: 1px solid $border-cards-portfolio;
   border-bottom: 1px solid $border-cards-portfolio;
+
+  @media (min-width: 768px) {
+    flex-grow: 1;
+  }
 }
+
 .project__thumb {
   position: relative;
   overflow: hidden;
