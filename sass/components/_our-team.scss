@@ -42,11 +42,6 @@
 }
 
 .our-team__img {
-  display: block;
-  height: auto;
-  @media (max-width: 767px) {
-    max-width: 100%;
-  }
   @media (min-width: 768px) {
     width: 354px;
   }
@@ -78,7 +73,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  width: 206px;
+  // width: 206px;
   height: 44px;
 }
 
