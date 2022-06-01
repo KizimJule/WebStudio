@@ -31,6 +31,7 @@
 .menu-mobil {
   background: $primary-white-color;
   font-size: 20px;
+  z-index: 10;
 
   @media screen and (max-width: 767px) {
     padding: 20px;
@@ -181,8 +182,6 @@
 
 .contact {
   display: flex;
-  align-items: center;
-  margin-left: auto;
 
   @media (max-width: 1199px) {
     flex-direction: column;

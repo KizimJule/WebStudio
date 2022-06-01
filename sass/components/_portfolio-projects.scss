@@ -1,7 +1,6 @@
 .project__list {
-  @media (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 60px;
-  }
+  margin-top: 40px;
+
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +20,11 @@
   @media (min-width: 1200px) {
     flex-basis: calc((100% - 6 * 15px) / 3);
   }
+  & + & {
+    @media (max-width: 767px) {
+      margin-top: 30px;
+    }
+  }
 }
 .project__link {
   display: block;
@@ -38,11 +42,7 @@
     height: 100%;
   }
 }
-// .project__img {
-//   display: block;
-//   max-width: 100%;
-//   height: auto;
-// }
+
 .project__title {
   font-size: 18px;
   line-height: 2;

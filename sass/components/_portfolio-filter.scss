@@ -8,10 +8,11 @@
 }
 .filter__list {
   display: flex;
+  column-gap: 8px;
 
   @media (max-width: 767px) {
     flex-wrap: wrap;
-    margin-bottom: -15px;
+    row-gap: 15px;
   }
   @media (min-width: 768px) {
     justify-content: center;
@@ -39,20 +40,5 @@
     background-color: $accent-color;
     color: $primary-white-color;
     box-shadow: $box-shadow-port;
-  }
-}
-.filter__item {
-  margin-right: 8px;
-
-  @media (max-width: 767px) {
-    margin-bottom: 15px;
-    &:nth-child(n + 4) {
-      margin-bottom: 0px;
-    }
-  }
-  @media (min-width: 768px) {
-    &:last-child {
-      margin-right: 0px;
-    }
   }
 }

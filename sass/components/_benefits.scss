@@ -18,6 +18,9 @@
   }
 }
 .feature-list__item + .feature-list__item {
+  @media (max-width: 767px) {
+    margin-top: 30px;
+  }
   @media (min-width: 1200px) {
     margin-left: 30px;
   }
