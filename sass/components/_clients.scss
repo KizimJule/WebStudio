@@ -18,15 +18,15 @@
 .clients__links {
   @extend %flex;
   justify-content: center;
+  height: 92px;
   @include border($icon-color);
   border-radius: 4px;
-  height: 92px;
   fill: $icon-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media (min-width: 1200px) {
-    width: 170px;
-  }
+  // @media (min-width: 1200px) {
+  //     width: 170px;
+  //   }
 
   &:hover,
   &:focus {
@@ -35,14 +35,21 @@
   }
 }
 .clients__item {
+  height: 92px;
+
   @media (max-width: 767px) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
+    width: 210px;
   }
 
   @media (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc((100% - 6 * 15px) / 3);
     margin: 15px;
+    width: 226px;
+  }
+  @media (min-width: 1200px) {
+    width: 170px;
   }
 }
 
