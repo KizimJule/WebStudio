@@ -292,8 +292,8 @@ img {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .feature-list__item {
-    -ms-flex-preferred-size: calc((100% - 120px) / 4);
-        flex-basis: calc((100% - 120px) / 4);
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
     width: 354px;
   }
@@ -312,18 +312,6 @@ img {
   background-color: #f5f4fa;
   height: 120px;
   margin-bottom: 30px;
-}
-
-@media (min-width: 768px) {
-  .feature-list__content {
-    width: 354px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .feature-list__content {
-    width: 270px;
-  }
 }
 
 .feature-list__title {
@@ -1645,7 +1633,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 63px 24px;
+  padding: 77px 24px;
   top: 0;
   left: 0;
   width: 100%;
@@ -1660,6 +1648,18 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  .project__dropdown {
+    padding: 49px 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project__dropdown {
+    padding: 63px 24px;
+  }
 }
 
 .project__link:hover .project__dropdown,

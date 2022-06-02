@@ -28,7 +28,7 @@
 .feature-list__item {
   width: 100%;
   @media (min-width: 768px) and (max-width: 1199px) {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
     width: 354px;
   }
@@ -43,12 +43,12 @@
   height: 120px;
   margin-bottom: 30px;
 
-  @media (min-width: 768px) {
-    width: 354px;
-  }
-  @media (min-width: 1200px) {
-    width: 270px;
-  }
+  // @media (min-width: 768px) {
+  //   width: 354px;
+  // }
+  // @media (min-width: 1200px) {
+  //   width: 270px;
+  // }
 }
 
 .feature-list__title {
