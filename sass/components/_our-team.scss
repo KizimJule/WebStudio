@@ -39,12 +39,6 @@
     margin: 15px;
     width: 354px;
   }
-
-  @media (min-width: 1200px) {
-    flex-basis: calc((100% - 120px) / 4);
-    margin: 15px;
-    width: 270px;
-  }
 }
 
 .our-team__desc {
