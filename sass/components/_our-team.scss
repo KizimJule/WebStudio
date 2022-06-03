@@ -28,7 +28,7 @@
 .our-team__item {
   text-align: center;
   box-shadow: $box-shadow-team;
-  width: 450px;
+
   & + & {
     @media (max-width: 767px) {
       margin-top: 30px;
