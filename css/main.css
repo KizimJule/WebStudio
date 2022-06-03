@@ -943,15 +943,15 @@ img {
   }
 }
 
-@media (max-width: 767px) {
-  .site-nav__item {
-    margin-bottom: 32px;
-  }
-}
-
 @media (min-width: 768px) {
   .site-nav__item {
     position: relative;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-nav__item + .site-nav__item {
+    margin-top: 32px;
   }
 }
 

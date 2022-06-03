@@ -80,14 +80,14 @@
 }
 
 .site-nav__item {
-  @media (max-width: 767px) {
-    margin-bottom: 32px;
-  }
   @media (min-width: 768px) {
     position: relative;
   }
 }
 .site-nav__item + .site-nav__item {
+  @media (max-width: 767px) {
+    margin-top: 32px;
+  }
   @media (min-width: 768px) {
     margin-left: 50px;
   }
