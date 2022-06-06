@@ -190,13 +190,16 @@
 .contact {
   display: flex;
 
-  @media (max-width: 1199px) {
+  @media (max-width: 1199.98px) {
     flex-direction: column;
   }
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @media (min-width: 768px) and (max-width: 1199.98px) {
     justify-content: center;
     align-items: flex-start;
     margin-left: 84px;
+  }
+  @media (min-width: 1200px) {
+    align-items: baseline;
   }
 }
 
